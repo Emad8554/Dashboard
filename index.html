@@ -1,0 +1,304 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Medical Dashboard</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- Remix Icon -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+      <!-- AOS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+      <div class="container">
+        <aside id="aside">
+          <a href="" class="logo" data-aos="fade-down"><i class="ri-first-aid-kit-line"></i></a>
+          <div class="icons">
+            <i class="ri-close-line" id="close" onclick="closeMenu()"></i>
+            <div class="link" data-aos="fade-left"><a href=""><i class="ri-dashboard-line"></i></a></div>
+            <div class="link" data-aos="fade-left" data-aos-delay="100"><a href=""><i class="ri-bar-chart-2-line"></i></a></div>
+            <div class="link" data-aos="fade-left" data-aos-delay="200"><a href=""><i class="ri-file-code-line"></i></a></div>
+            <div class="link" data-aos="fade-left" data-aos-delay="300"><a href=""><i class="ri-refund-line"></i></a></div>
+            <div class="link" data-aos="fade-left" data-aos-delay="400"><a href=""><i class="ri-settings-2-line"></i></a></div>
+            <div class="link" data-aos="fade-left" data-aos-delay="500"><a href=""><i class="ri-door-open-fill"></i></a></div>
+          </div>
+        </aside>
+
+        <main>
+
+          <header>
+            <div class="box">
+              <a href="" data-aos="fade-left">Add Patient</a>
+              <a href="" data-aos="fade-up" data-aos-delay="100">Treatments</a>
+              <a href="" data-aos="fade-down" data-aos-delay="200">Doctors</a>
+              
+              <div class="search" data-aos="fade-left" data-aos-delay="300">
+                <i class="ri-search-line"></i>
+                <input type="search" class="search" placeholder="Search">
+              </div>
+              <i class="ri-menu-line" id="menu" onclick="openMenu()"></i>
+            </div>
+            <!-- Responsive Search, profile -->
+            <div class="search search2" data-aos="fade-right" data-aos-delay="400">
+              <input type="search" class="search" placeholder="Search">
+            </div>
+            <!-- Responsive top side -->
+            <div class="top-side">
+              <a href="" data-aos="fade-left"><i class="ri-message-2-line"></i></a>
+              <a href="" data-aos="fade-left" data-aos-delay="100">
+                <i class="ri-notification-2-fill">
+                  <p>3</p>
+                </i>
+              </a>
+            <div class="img" >
+              <img src="./img/doc3.jpg" alt="">
+            </div>
+          </div>
+          </header>
+          <div class="content">
+            <div class="dashboard">
+              <div class="main-part">
+                <h1 data-aos="fade-down" data-aos-delay="200">Dashboard</h1>
+                <div class="month" data-aos="fade-right" data-aos-delay="300">
+                  <h3>The Month</h3>
+                  <i class="ri-arrow-drop-down-line"></i>
+                </div>
+              </div>
+              
+              <div class="box">
+                <div class="card card1" data-aos="fade-left" data-aos-delay="300">
+                  <div class="icon icon1">
+                    <i class="ri-user-shared-2-fill"></i>
+                  </div>
+                  <div class="card-text">
+                    <h4>Total Doctors</h4>
+                    <h2>109</h2>
+                  </div>
+                </div>
+                <div class="card card2" data-aos="fade-down" data-aos-delay="400">
+                  <div class="icon icon2">
+                    <i class="ri-group-fill"></i>
+                  </div>
+                  <div class="card-text">
+                    <h4>Total Staff</h4>
+                    <h2>230</h2>
+                  </div>
+                </div>
+                <div class="card card3" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon icon3">
+                    <i class="ri-user-add-fill"></i>
+                  </div>
+                  <div class="card-text">
+                    <h4>Total Patients</h4>
+                    <h2>1054</h2>
+                  </div>
+                </div>
+                <div class="card card4" data-aos="fade-left" data-aos-delay="600">
+                  <div class="icon icon4">
+                    <i class="ri-hotel-bed-fill"></i>
+                  </div>
+                  <div class="card-text">
+                    <h4>Total Room</h4>
+                    <h2>260</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="analysis">
+              <div class="report" data-aos="fade-down" data-aos-delay="100">
+                <h1>Report</h1>
+                <div class="report-box box1" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon">
+                    <i class="ri-hand i1"></i>
+                  </div>
+                  <div class="report-box-text">
+                    <h3>There was a great news about x-Ray</h3>
+                    <p>20 minutes ago</p>
+                  </div>
+                </div> 
+                <div class="report-box box2" data-aos="fade-down" data-aos-delay="400">
+                  <div class="icon">
+                    <i class="ri-bank-fill i2"></i>
+                  </div>
+                  <div class="report-box-text">
+                    <h3>There was a breakdown about elevator on 1st floor</h3>
+                    <p>33 minutes ago</p>
+                  </div>
+                </div> 
+                <div class="report-box box3" data-aos="fade-right" data-aos-delay="500">
+                  <div class="icon">
+                    <i class="ri-government-fill i3"></i>
+                  </div>
+                  <div class="report-box-text">
+                    <h3>There was a big achievement for our hospital</h3>
+                    <p>42 minutes ago</p>
+                  </div>
+                </div> 
+              </div>
+              <div class="graph" data-aos="fade-up" data-aos-delay="200">
+                <div class="top-text">
+                  <h1 data-aos="fade-left" data-aos-delay="400">Patient Statistics</h1>
+                  <h3 data-aos="fade-right" data-aos-delay="500">March 10-18, <span>2021</span></h3>
+                </div>
+                <div class="stats" data-aos="fade-up" data-aos-delay="500">
+                    <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="data" data-aos="fade-up" data-aos-delay="200">
+              <h1 data-aos="fade-left" data-aos-delay="300">Latest Patient Data</h1>
+              <table>
+                <thead data-aos="fade-up" data-aos-delay="400">
+                  <tr>
+                    <th>No.</th>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Id</th>
+                    <th>Country</th>
+                    <th>Setting</th>
+                  </tr>
+                </thead>
+                <tbody data-aos="fade-left" data-aos-delay="500">
+                  <tr>
+                    <td data-label="No.">01.</td>
+                    <td data-label="Date">7/22/2021</td>
+                    <td data-label="Name">Andrew Flintoff</td>
+                    <td data-label="Gender">Male</td>
+                    <td data-label="Id">CH-34973</td>
+                    <td data-label="Country">California, USA</td>
+                    <td data-label="Setting">
+                      <i class="ri-pencil-line"></i>
+                      <i class="ri-delete-bin-6-fill"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No.">02.</td>
+                    <td data-label="Date">9/12/2022</td>
+                    <td data-label="Name">Larrel Buffet</td>
+                    <td data-label="Gender">Male</td>
+                    <td data-label="Id">CH-34232</td>
+                    <td data-label="Country">New York, USA</td>
+                    <td data-label="Setting">
+                      <i class="ri-pencil-line"></i>
+                      <i class="ri-delete-bin-6-fill"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+            </div>
+          </div>
+        </main>
+
+        <div class="side-right" data-aos="fade-left" data-aos-delay="400">
+
+          <div class="top-side">
+              <a href="" data-aos="fade-up" data-aos-delay="500"><i class="ri-message-2-line"></i></a>
+              <a href="" data-aos="fade-left" data-aos-delay="600">
+                  <i class="ri-notification-2-fill">
+                  <p>3</p>
+                </i>
+              </a>
+            <div class="img" data-aos="fade-down" data-aos-delay="700">
+              <img src="./img/doc3.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="behance" data-aos="fade-down" data-aos-delay="200">
+            <h2 data-aos="fade-left" data-aos-delay="500">Total Behance</h2>
+            <div class="card" data-aos="fade-up" data-aos-delay="600">
+              <div class="icon icon1">
+                <i class="ri-arrow-up-line arrow1"></i>
+              </div>
+              <div class="behance-text">
+                <p>Total Income</p>
+                <h2>$2609.00</h2>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-delay="700">
+              <div class="icon icon2">
+                <i class="ri-arrow-down-line arrow2"></i>
+              </div>
+              <div class="behance-text">
+                <p>Total Outcome</p>
+                <h2>$109.00</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="doc-patient" data-aos="fade-up" data-aos-delay="50">
+            <h2 data-aos="fade-left" data-aos-delay="100">Doctors vs Patients</h2>
+            <div class="doc-details" data-aos="fade-down" data-aos-delay="100">
+              <div class="img" data-aos="fade-left" data-aos-delay="400">
+                <img src="./img/doc1.jpg" alt="">
+              </div>
+
+              <div class="doc-detail" data-aos="fade-up" data-aos-delay="">
+                <h2 data-aos="fade-down" data-aos-delay="500">Dr. Abdus Samad</h2>
+                <p data-aos="fade-up" data-aos-delay="600">Cardilogist</p>
+              </div>
+              
+              <i class="ri-group-fill group1" data-aos="fade-left" data-aos-delay="400"></i>
+              <p data-aos="fade-down" data-aos-delay="600">350</p>
+
+            </div>
+            <div class="doc-details" data-aos="fade-right" data-aos-delay="200">
+              <div class="img" data-aos="fade-left" data-aos-delay="400">
+                <img src="./img/doc2.jpg" alt="">
+              </div>
+
+              <div class="doc-detail" data-aos="fade-down" data-aos-delay="400">
+                <h2 data-aos="fade-right" data-aos-delay="500">Dr. Yenman</h2>
+                <p data-aos="fade-left" data-aos-delay="600">Dentist</p>
+              </div>
+
+              <i class="ri-group-fill group2" data-aos="fade-left" data-aos-delay="400"></i>
+              <p data-aos="fade-down" data-aos-delay="500">432</p>
+
+            </div>
+            <div class="doc-details" data-aos="fade-up" data-aos-delay="300">
+              <div class="img" data-aos="fade-left" data-aos-delay="400">
+                <img src="./img/doc3.jpg" alt="">
+              </div>
+
+              <div class="doc-detail" data-aos="fade-down" data-aos-delay="500">
+                <h2 data-aos="fade-right" data-aos-delay="600">Dr. Amir Ahmed</h2>
+                <p data-aos="fade-left" data-aos-delay="700">Nuerologist</p>
+              </div>
+
+              <i class="ri-group-fill group3" data-aos="fade-left" data-aos-delay="400"></i>
+              <p>158</p>
+
+            </div>
+            <div class="doc-details" data-aos="fade-down" data-aos-delay="400">
+              <div class="img" data-aos="fade-left" data-aos-delay="400">
+                <img src="./img/doc4.jpg" alt="">
+              </div>
+
+              <div class="doc-detail" data-aos="fade-left" data-aos-delay="500">
+                <h2 data-aos="fade-down" data-aos-delay="600">Dr. Philip</h2>
+                <p data-aos="fade-right" data-aos-delay="700">Surgeon</p>
+              </div>
+
+              <i class="ri-group-fill group4" data-aos="fade-down" data-aos-delay="400"></i>
+              <p data-aos="fade-up" data-aos-delay="500">780</p>
+
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <!-- AOS Script -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          once: true
+        });
+      </script>
+      <script src="main.js"></script>
+  </body>
+  </html>
